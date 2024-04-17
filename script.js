@@ -1,8 +1,8 @@
-fetch("https://api.exchangerate-api.com/v4/latest/EUR").then((response) => response.json()).then((data) => {
+fetch("https://api.exchangerate-api.com/v4/latest/USD").then((response) => response.json()).then((data) => {
     document.getElementById("dolar").innerText = `Fiyat ${data.rates.TRY}`;
 });
 
-fetch("https://api.exchangerate-api.com/v4/latest/USD").then((response) => response.json()).then((data) => {
+fetch("https://api.exchangerate-api.com/v4/latest/EUR").then((response) => response.json()).then((data) => {
     document.getElementById("euro").innerText = `Fiyat ${data.rates.TRY}`;
 });
 
